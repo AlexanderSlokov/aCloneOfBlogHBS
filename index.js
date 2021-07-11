@@ -4,7 +4,7 @@ var exphbs = require("express-handlebars"); //Express Handle bars
 
 const path = require("path");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 //Handle bars
 app.engine("handlebars", exphbs());
